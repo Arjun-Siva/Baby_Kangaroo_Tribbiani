@@ -1,0 +1,27 @@
+{
+  "name": "Baby Kangaroo Tribbiani",
+  "version": "1.0",
+  "description": "Bring in chaos to your webpages",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://*/"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/logo_16x16.png",
+      "48": "icons/logo_48x48.png",
+      "128": "icons/logo_128x128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/logo_16x16.png",
+    "48": "icons/logo_48x48.png",
+    "128": "icons/logo_128x128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["data/thesaurus.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "manifest_version": 3
+}

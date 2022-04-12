@@ -1,0 +1,38 @@
+.btns {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    row-gap: 20px;
+    height: 30px;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    color: black;
+    position: relative;
+    font-weight: bold;
+    padding: 5px;
+}
+
+button::after {
+    content: attr(data-title);
+    position: absolute;
+    background: #444;
+    color: #fff;
+    left: 0;
+    font-size: 12px;
+    width: 200px;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 300ms;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+}
+
+button:hover::after {
+    opacity: 1;
+    transform: translateY(5px);
+}
